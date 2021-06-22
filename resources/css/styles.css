@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: url("../images/polygon.jpg") center no-repeat;
+}
+
+.synthesizer {
+  background-color: #001d3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: auto;
+  width: 30vw;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.synthesizer__options {
+  display: flex;
+  flex-direction: column;
+}
+.synthesizer__options .select-option {
+  z-index: 10;
+  margin: 3rem 0 1rem 0;
+}
+.synthesizer__options .select-option__select {
+  width: 90%;
+}
+.synthesizer__heading {
+  background-color: #003566;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.25rem;
+  width: 100%;
+}
+.synthesizer__wrapper {
+  margin-top: 4rem;
+}
+.synthesizer__voice-picker .select-option {
+  margin: 2rem auto;
+}
+.synthesizer__voice-picker .select-option__select {
+  margin: 0.5rem auto;
+  width: 90%;
+}
+.synthesizer .voice-rate,
+.synthesizer .voice-pitch {
+  text-align: left;
+  width: 90%;
+  margin: 0.5rem auto;
+}
+.synthesizer .voice-rate .wrapper,
+.synthesizer .voice-pitch .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.synthesizer .output-wrapper {
+  margin: 1rem 0;
+}
+.synthesizer .output-wrapper textarea {
+  height: 160px;
+  width: 90%;
+}
+.synthesizer .button-container {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  margin: 0.5rem auto;
+  box-sizing: border-box;
+}
+.synthesizer .button-container button {
+  background-color: #ffd60a;
+  border: none;
+  padding: 0.5rem 4rem;
+  color: #003566;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.synthesizer .button-container button:hover {
+  background-color: #fdde42;
+  cursor: pointer;
+}
+
+input[type=text] {
+  height: 160px;
+  width: 90%;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=range] {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
