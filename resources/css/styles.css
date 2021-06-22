@@ -98,15 +98,17 @@ body {
   cursor: pointer;
 }
 
-input[type=text] {
-  height: 160px;
-  width: 90%;
-}
-
 input[type=text]:focus {
   outline: none;
 }
 
 input[type=range] {
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .synthesizer {
+    width: 90%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
