@@ -42,6 +42,8 @@ function playUtterance() {
     }
 }
 
+function pauseUtterance() {}
+
 formSelect.addEventListener('submit', (e) => {
     e.preventDefault();
     playUtterance();
@@ -56,3 +58,5 @@ pitchButton.addEventListener('change', (e) => {
 });
 
 playBtn.addEventListener('click', playUtterance);
+
+pause.addEventListener('click');
