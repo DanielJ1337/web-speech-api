@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
-    width: 30vw;
+    width: 40vw;
     text-align: center;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -112,10 +112,6 @@ body {
     }
 }
 
-input[type='text']:focus {
-    outline: none;
-}
-
 input[type='range'] {
     width: 100%;
 }
@@ -124,13 +120,11 @@ input[type='range'] {
     .synthesizer {
         width: 100%;
         margin: auto;
-    }
 
-    .synthesizer__heading {
-        font-size: 1.25rem;
-    }
+        &__heading {
+            font-size: 1.25rem;
+        }
 
-    .synthesizer {
         .button-container {
             gap: 5px;
 
@@ -139,5 +133,11 @@ input[type='range'] {
                 font-size: 1.3rem;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .synthesizer {
+        width: 90vw;
     }
 }
